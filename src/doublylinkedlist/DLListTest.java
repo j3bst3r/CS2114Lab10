@@ -306,5 +306,17 @@ public class DLListTest extends TestCase {
         }
         assertNotNull(exception);
     }
+    
+    /**
+     * test size 2
+     */
+    public void testSize2() {
+        list.add("1");
+        list.add("10");
+        list.add("100");
+        assertEquals(3,list.size());
+        list.clear();
+        assertEquals(0,list.size());
+    }
 
 }
